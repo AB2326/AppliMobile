@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+  const SignUpPage({super.key});
 
   @override
   _SignUpPageState createState() => _SignUpPageState();
@@ -38,7 +38,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               const SizedBox(height: 20),
               TextFormField(
-                decoration: InputDecoration(labelText: 'Nom'),
+                decoration: const InputDecoration(labelText: 'Nom'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre nom';
@@ -48,7 +48,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               const SizedBox(height: 10),
               TextFormField(
-                decoration: InputDecoration(labelText: 'Prénom'),
+                decoration: const InputDecoration(labelText: 'Prénom'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre prénom';
@@ -58,7 +58,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               const SizedBox(height: 10),
               TextFormField(
-                decoration: InputDecoration(labelText: 'Adresse Email'),
+                decoration: const InputDecoration(labelText: 'Adresse Email'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre adresse email';
@@ -69,7 +69,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               const SizedBox(height: 10),
               TextFormField(
-                decoration: InputDecoration(labelText: 'Numéro de téléphone'),
+                decoration: const InputDecoration(labelText: 'Numéro de téléphone'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre numéro de téléphone';
@@ -82,7 +82,7 @@ class _SignUpPageState extends State<SignUpPage> {
               TextFormField(
                 controller: _passwordController,
                 obscureText: true,
-                decoration: InputDecoration(labelText: 'Mot de passe'),
+                decoration: const InputDecoration(labelText: 'Mot de passe'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre mot de passe';
@@ -94,7 +94,7 @@ class _SignUpPageState extends State<SignUpPage> {
               TextFormField(
                 controller: _confirmPasswordController,
                 obscureText: true,
-                decoration: InputDecoration(labelText: 'Confirmer le mot de passe'),
+                decoration: const InputDecoration(labelText: 'Confirmer le mot de passe'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez confirmer votre mot de passe';

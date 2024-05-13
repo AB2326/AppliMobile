@@ -1,27 +1,31 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Accueil'),
+        title: const Text('Accueil'),
         actions: [
           IconButton(
-            icon: Icon(Icons.accessibility),
+            icon: const Icon(Icons.accessibility),
             onPressed: () {
               // Action à effectuer lorsque l'icône d'accessibilité est cliquée
             },
@@ -31,20 +35,20 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
               child: Text('Mon Profil'),
             ),
             ListTile(
-              title: Text('Catégorie 1'),
+              title: const Text('Catégorie 1'),
               onTap: () {
                 // Action à effectuer lorsque la catégorie 1 est cliquée
               },
             ),
             ListTile(
-              title: Text('Catégorie 2'),
+              title: const Text('Catégorie 2'),
               onTap: () {
                 // Action à effectuer lorsque la catégorie 2 est cliquée
               },
@@ -59,7 +63,7 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: 'Rechercher...',
@@ -67,12 +71,12 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 8.0),
+                const SizedBox(width: 8.0),
                 ElevatedButton(
                   onPressed: () {
                     // Action à effectuer lorsque le bouton de recherche est cliqué
                   },
-                  child: Text('Rechercher'),
+                  child: const Text('Rechercher'),
                 ),
               ],
             ),
@@ -81,23 +85,23 @@ class HomePage extends StatelessWidget {
             child: ListView(
               children: [
                 ListTile(
-                  title: Text('Titre de l\'article 1'),
-                  subtitle: Text('Description de l\'article 1'),
+                  title: const Text('Titre de l\'article 1'),
+                  subtitle: const Text('Description de l\'article 1'),
                   trailing: ElevatedButton(
                     onPressed: () {
                       // Action à effectuer lorsque le bouton "View more" de l'article 1 est cliqué
                     },
-                    child: Text('View more'),
+                    child: const Text('View more'),
                   ),
                 ),
                 ListTile(
-                  title: Text('Titre de l\'article 2'),
-                  subtitle: Text('Description de l\'article 2'),
+                  title: const Text('Titre de l\'article 2'),
+                  subtitle: const Text('Description de l\'article 2'),
                   trailing: ElevatedButton(
                     onPressed: () {
                       // Action à effectuer lorsque le bouton "View more" de l'article 2 est cliqué
                     },
-                    child: Text('View more'),
+                    child: const Text('View more'),
                   ),
                 ),
                 // Ajoutez d'autres articles ici...
