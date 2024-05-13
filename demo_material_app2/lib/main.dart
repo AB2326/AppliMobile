@@ -47,7 +47,8 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           print("J'ai cliqué sur le bouton");
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.done),
+        backgroundColor: Colors.lightBlue, // Couleur du bouton flottant
       ),
     );
   }
