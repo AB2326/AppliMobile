@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+
 void main() {
   runApp(const PractiseApp());
 }
+
 class PractiseApp extends StatelessWidget {
-  const PractiseApp({super.key});
+  const PractiseApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -16,22 +19,36 @@ class PractiseApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Ma première AppBar"),
-        ),
-        body: Container(
+      appBar: AppBar(
+        title: const Text("Ma première AppBar"),
+      ),
+      body: Center(
+        child: Container(
           height: 300,
           width: 300,
           color: Colors.lightBlueAccent,
-          child: const Text(
+          child: const Center(
+            child: Text(
               "Petit texte",
-              style: TextStyle(color: Colors.white, fontSize: 45, fontWeight:
-              FontWeight.bold)
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 45,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
-        )
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("J'ai cliqué sur le bouton");
+        },
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
