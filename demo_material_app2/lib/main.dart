@@ -1,3 +1,4 @@
+import 'package:demo_material_app2/login_page.dart';
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(), // Utilisez HomePage() au lieu de MyHomePage()
+        home: LoginPage()// Utilisez HomePage() au lieu de MyHomePage()
     );
   }
 }
