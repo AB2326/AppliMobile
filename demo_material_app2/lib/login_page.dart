@@ -61,13 +61,11 @@ class LoginPage extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        // Validate form before navigating
                         if (_formKey.currentState!.validate()) {
                           _formKey.currentState!.save();
-                          // Perform login logic here with _email and _password
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => HomePage()), // Rediriger vers la page d'accueil
+                            MaterialPageRoute(builder: (context) => HomePage()),
                           );
                         }
                       },

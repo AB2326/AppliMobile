@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        home: LoginPage()// Utilisez HomePage() au lieu de MyHomePage()
+        home: LoginPage()
     );
   }
 }

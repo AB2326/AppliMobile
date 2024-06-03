@@ -63,7 +63,6 @@ class _SignUpPageState extends State<SignUpPage> {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre adresse email';
                   }
-                  // You can add additional email validation logic here if needed
                   return null;
                 },
               ),
@@ -74,7 +73,6 @@ class _SignUpPageState extends State<SignUpPage> {
                   if (value == null || value.isEmpty) {
                     return 'Veuillez saisir votre numéro de téléphone';
                   }
-                  // You can add additional phone number validation logic here if needed
                   return null;
                 },
               ),
@@ -109,14 +107,12 @@ class _SignUpPageState extends State<SignUpPage> {
               ElevatedButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
-                    // Perform signup logic here
-                    // Once signup is successful, navigate back to the login page
                     Navigator.pop(context);
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         content: Text('Inscription réussie !'),
-                        backgroundColor: Colors.green, // Couleur verte
-                        behavior: SnackBarBehavior.floating, // Animation de descente vers le bas
+                        backgroundColor: Colors.green,
+                        behavior: SnackBarBehavior.floating,
                       ),
                     );
                   }

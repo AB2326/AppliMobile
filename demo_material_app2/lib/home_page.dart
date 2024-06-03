@@ -12,7 +12,6 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.accessibility),
             onPressed: () {
-              // Action à effectuer lorsque l'icône d'accessibilité est cliquée
             },
           ),
         ],
@@ -29,13 +28,11 @@ class HomePage extends StatelessWidget {
             ListTile(
               title: const Text('Catégorie 1'),
               onTap: () {
-                // Action à effectuer lorsque la catégorie 1 est cliquée
               },
             ),
             ListTile(
               title: const Text('Catégorie 2'),
               onTap: () {
-                // Action à effectuer lorsque la catégorie 2 est cliquée
               },
             ),
           ],
@@ -59,7 +56,6 @@ class HomePage extends StatelessWidget {
                 const SizedBox(width: 8.0),
                 ElevatedButton(
                   onPressed: () {
-                    // Action à effectuer lorsque le bouton de recherche est cliqué
                   },
                   child: const Text('Rechercher'),
                 ),
@@ -74,7 +70,6 @@ class HomePage extends StatelessWidget {
                   subtitle: const Text('Description de l\'article 1'),
                   trailing: ElevatedButton(
                     onPressed: () {
-                      // Action à effectuer lorsque le bouton "View more" de l'article 1 est cliqué
                     },
                     child: const Text('View more'),
                   ),
@@ -84,12 +79,10 @@ class HomePage extends StatelessWidget {
                   subtitle: const Text('Description de l\'article 2'),
                   trailing: ElevatedButton(
                     onPressed: () {
-                      // Action à effectuer lorsque le bouton "View more" de l'article 2 est cliqué
                     },
                     child: const Text('View more'),
                   ),
                 ),
-                // Ajoutez d'autres articles ici...
               ],
             ),
           ),
